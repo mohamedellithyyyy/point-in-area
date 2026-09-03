@@ -1,0 +1,101 @@
+# ==============================
+# Java / Maven
+# ==============================
+
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ==============================
+# IDEs
+# ==============================
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+.vscode/
+.settings/
+.project
+.classpath
+
+# ==============================
+# OS files
+# ==============================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Thumbs.db
+ehthumbs.db
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+logs/
+
+# ==============================
+# Environment / secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+
+# ==============================
+# Temporary files
+# ==============================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ==============================
+# Build / generated files
+# ==============================
+
+dist/
+build/
+out/
+
+# ==============================
+# WildFly / application server
+# ==============================
+
+standalone/log/
+standalone/tmp/
+standalone/data/
+standalone/deployments/*.deployed
+standalone/deployments/*.failed
+standalone/deployments/*.isdeploying
+standalone/deployments/*.pending
+standalone/deployments/*.undeployed
+
+# ==============================
+# FastCGI / generated binaries
+# ==============================
+
+bin/
+obj/
+
+# ==============================
+# Test / coverage
+# ==============================
+
+coverage/
+*.exec
