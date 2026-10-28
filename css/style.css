@@ -1,0 +1,146 @@
+    body {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #23324a;
+    background: #ffffff;
+    margin: 0;
+    padding: 20px;
+    }
+
+    input, select, button {
+    margin: 5px;
+    padding: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #9aa7bd;
+    border-radius: 4px;
+    }
+
+
+    input[type="text"] {
+    width: 90px;
+    }
+
+    select[name="x"] {
+    width: 70px;
+    }
+
+    button[type="button"].r-button {
+    width: 34px;
+    cursor: pointer;
+    }
+
+    button[type="submit"] {
+    background: #2c6bd7;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    }
+
+    #layout {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    background: #fdfdfd;
+    }
+
+    #layout > tbody > tr > td {
+    padding: 14px 18px;
+    vertical-align: top;
+    }
+
+    #header {
+    background: #2c3e6b;
+    font-family: cursive;
+    color: #fff;
+    font-size: 45px;
+    }
+
+    #header .meta {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    }
+
+    .form-row label::after {
+    content: ":";
+    margin-right: 4px;
+    }
+
+    #control-panel > .form-row {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    }
+
+    #control-panel > .form-row > label {
+    width: 150px;
+    display: inline-block;
+    font-weight: bold;
+    }
+    #r-buttons {
+    display: inline-flex;
+    gap: 4px;
+    }
+
+    #r-buttons > button.selected {
+    background: #2c6bd7;
+    color: #fff;
+    border-color: #1a4fa0;
+    }
+
+    #canvas-area {
+    text-align: center;
+    }
+
+    canvas {
+    border: 1px solid #9aa7bd;
+    background: #fff;
+    }
+
+    #error-box {
+    font-weight: bold;
+    min-height: 20px;
+    margin: 6px 0;
+    }
+
+    #results-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    }
+
+    #results-table caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 6px;
+    }
+
+    #results-table th, #results-table td {
+    border: 1px solid #9aa7bd;
+    padding: 6px 10px;
+    text-align: center;
+    }
+
+    #results-table thead th {
+    background: #2c6bd7;
+    color: #fff;
+    }
+
+    #results-table > tbody > tr:nth-child(even) {
+    background: #FFFFFF;
+    }
+
+    .hit-yes .hit-no{
+    font-weight: bold;
+    }
+
+    #clear-btn {
+    margin-top: 10px;
+    background: #888;
+    color: #fff;
+    }

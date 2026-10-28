@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Лабораторная работа №1 | Вариант 22685</title>
+
+<link rel="stylesheet" href="./css/style.css">
+ <script type="module" src="./js/app.js"></script>
+</head>
+
+<body>
+
+<table id="layout">
+
+    <tbody>
+
+    <tr>
+    <td colspan="2">
+    <div id="header">
+    Лабораторная работа 1
+    <span class="meta">
+    Студент: Эллити Мохамед Эмад Ахмед Авад &nbsp;|&nbsp; Группа: P3231 &nbsp;|&nbsp; Вариант: 22685
+    </span>
+    </div>
+    </td>
+    </tr>
+    <tr>
+
+    <td style="width:55%">
+    <h2>Координатная плоскость</h2>
+    <div id="canvas-area">
+    <canvas id="plane" width="440" height="440"></canvas>
+    </div>
+    </td>
+
+    <td style="width:45%">
+    <h2>Проверка точки</h2>
+
+    <form id="point-form" novalidate>
+
+    <div id="control-panel">
+
+    <div class="form-row">
+    <label for="x-select">X</label>
+    <select id="x-select" name="x" required>
+    <option value="-3">-3</option>
+    <option value="-2">-2</option>
+    <option value="-1">-1</option>
+    <option value="0" selected>0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    </select>
+    </div>
+
+    <div class="form-row">
+    <label for="y-input">Y (от -5 до 3)</label>
+    <input type="text" id="y-input" name="y" placeholder="от -5 до 3" autocomplete="off">
+    </div>
+
+    <div class="form-row">
+    <label>R</label>
+    <div id="r-buttons">
+    <button type="button" class="r-button" data-r="1">1</button>
+    <button type="button" class="r-button" data-r="2">2</button>
+    <button type="button" class="r-button" data-r="3">3</button>
+    <button type="button" class="r-button" data-r="4">4</button>
+    <button type="button" class="r-button" data-r="5">5</button>
+    </div>
+    </div>
+
+    </div>
+
+    <div id="error-box"></div>
+
+    <button type="submit">Проверить точку</button>
+
+    </form>
+
+    </td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="2">
+
+    <table id="results-table">
+
+    <caption id="results-heading">Результаты проверок</caption>
+
+    <thead>
+    <tr>
+    <th>X</th>
+    <th>Y</th>
+    <th>R</th>
+    <th>Результат</th>
+    <th>Дата и время</th>
+    </tr>
+    </thead>
+
+    <tbody id="results-body">
+    </tbody>
+
+    </table>
+
+    <button id="clear-btn" type="button">Очистить историю</button>
+
+    </td>
+
+    </tr>
+
+    </tbody>
+
+</table>
+</body>
+
+</html>
